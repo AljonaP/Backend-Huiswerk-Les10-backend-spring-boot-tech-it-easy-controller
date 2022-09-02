@@ -23,12 +23,12 @@ public class TelevisionsController {
         return ResponseEntity.created();
     }
 
-    @PutMapping("/television/{id}")
+    @PutMapping("/televisions/{id}")
     public ResponseEntity<Object> putTelevision(@PathVariable int id, @RequestBody String televisionName) {
         return ResponseEntity.ok();
     }
 
-    @DeleteMapping("/television/{id}")
+    @DeleteMapping("/televisions/{id}")
     public ResponseEntity<Object> deleteTelevision(@PathVariable int id) {
         return ResponseEntity.noContent();
     }
